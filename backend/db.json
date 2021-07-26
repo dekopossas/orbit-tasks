@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Letícia Aurora Farias",
+      "cpf": "93693803960",
+      "wage": "998",
+      "discount": "74.85",
+      "dependents": "2"
+    },
+    {
+      "id": 2,
+      "fullName": "Edson Thiago Drumond",
+      "cpf": "74851747624",
+      "wage": "1045",
+      "discount": "78.38",
+      "dependents": "1"
+    },
+    {
+      "id": 3,
+      "fullName": "Fátima Elza Tereza Castro",
+      "cpf": "70111887208",
+      "wage": "5500",
+      "discount": "628.95",
+      "dependents": "0"
+    },
+    {
+      "id": 4,
+      "fullName": "Sandra Giovanna Drumond",
+      "cpf": "71589075625",
+      "wage": "4522",
+      "discount": "492.03",
+      "dependents": "3"
+    },
+    {
+      "id": 5,
+      "fullName": "Valentina Clara Nunes",
+      "cpf": "10115140441",
+      "wage": "10000",
+      "discount": "713.1",
+      "dependents": "4"
+    },
+    {
+      "fullName": "André",
+      "cpf": "32165498787",
+      "wage": "3265",
+      "discount": "204",
+      "dependents": "2",
+      "id": 6
+    }
+  ]
+}
