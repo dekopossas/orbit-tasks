@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '@seidor-cloud-produtos/4tax-react-components';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './utils/routes';
 
