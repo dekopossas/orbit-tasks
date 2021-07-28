@@ -6,7 +6,7 @@ function Routes() {
   return (
     <div>
       <Switch>
-        <Route path="/" component={Home}></Route>
+        <Route path="/" component={Home} />
       </Switch>
     </div>
   )
