@@ -1,6 +1,7 @@
 import React from 'react'
 import containerStyle from 'assets/css/modules/container.module.css'
 import style from './style.module.scss'
+import { ReactComponent as Logo } from 'assets/svg/logo2.svg'
 
 function Login() {
 
