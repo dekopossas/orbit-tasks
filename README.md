@@ -13,8 +13,9 @@ Projeto dedicado a criação do novo side bar da ORBIT.
 ### Observações relevantes
 
 - Biblioteca não contem get-start
-Tabela de conteúdos
 
+
+Tabela de conteúdos
 =================
 <!--ts-->
    * [Features](#Features)
