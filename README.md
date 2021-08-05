@@ -24,3 +24,7 @@ Tabela de conteúdos
    * [Tecnologias](#tecnologias)
    * [Autor](#Autor)
 <!--te-->
+
+queria poder estudar hj!
+
+pensei em fazer uma especie de programa q me pergunta o que eu fiz hj e me mostra o que eu tinha feito ontem
