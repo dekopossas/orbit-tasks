@@ -41,6 +41,19 @@ export default interface ConfigInterface {
       update?: string | effectCallback;
       delete?: string | effectCallback;
     };
+  };
+
+  // -------------------------------------------------
+  // Events
+  // -------------------------------------------------
+
+  after?: (dispatch: any) => {
+    general?: (response: genericObject, data: genericObject) => void;
+    index?: (response: genericObject, data: genericObject) => void;
+    show?: (response: genericObject, data: genericObject) => void;
+    create?: (response: genericObject, data: genericObject) => void;
+    update?: (response: genericObject, data: genericObject) => void;
+    delete?: (response: genericObject, data: genericObject) => void;
   }
 };
 
