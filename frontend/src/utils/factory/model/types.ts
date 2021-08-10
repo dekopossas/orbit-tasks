@@ -1,3 +1,5 @@
+export type genericModel = Record<string, unknown>;
+
 export interface ModelState<T = genericModel> {
   list: {
     data: T[];
