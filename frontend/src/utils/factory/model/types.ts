@@ -4,6 +4,19 @@ export type genericModel = Record<string, unknown>;
 export type effectCallback = (data: genericObject) => string;
 export type crudTypes = "index" | "general" | "show" | "create" | "update" | "delete";
 
+export default interface ConfigInterface {
+  name: string;
+  endpoint: string | {
+    general: string | effectCallback;
+    index?: string | effectCallback;
+    show?: string | effectCallback;
+    create?: string | effectCallback;
+    update?: string | effectCallback;
+    delete?: string | effectCallback;
+  };
+  
+}
+
 export interface ModelState<T = genericModel> {
   list: {
     data: T[];
