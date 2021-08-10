@@ -54,7 +54,17 @@ export default interface ConfigInterface {
     create?: (response: genericObject, data: genericObject) => void;
     update?: (response: genericObject, data: genericObject) => void;
     delete?: (response: genericObject, data: genericObject) => void;
-  }
+  };
+
+  // -------------------------------------------------
+  // Overwrites
+  // -------------------------------------------------
+  
+  state?: genericObject;
+  reducers?: {
+    [key: string]: (genericObject: genericObject, payload: genericObject) => genericObject;
+  };
+  effects?: (dispatch: any) => genericObject;
 };
 
 export interface ModelState<T = genericModel> {
