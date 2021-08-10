@@ -14,8 +14,35 @@ export default interface ConfigInterface {
     update?: string | effectCallback;
     delete?: string | effectCallback;
   };
-  
-}
+
+  mock?: Record<string, any>;
+
+  // -------------------------------------------------
+  // Messages
+  // -------------------------------------------------
+
+  messages?:{
+    // generic error message, could be used instead
+    // of manually setting every message.
+    error?: string | {
+      general: string;
+      index?: string | effectCallback;
+      show?: string | effectCallback;
+      create?: string | effectCallback;
+      update?: string | effectCallback;
+      delete?: string | effectCallback;
+    };
+
+    success: string | {
+      general: string;
+      index?: string | effectCallback;
+      show?: string | effectCallback;
+      create?: string | effectCallback;
+      update?: string | effectCallback;
+      delete?: string | effectCallback;
+    };
+  }
+};
 
 export interface ModelState<T = genericModel> {
   list: {
