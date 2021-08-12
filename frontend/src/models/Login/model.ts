@@ -1,6 +1,9 @@
+// Utils
+import modelFactory from '../../utils/factory/model'
+
 import { Model, loginRequestResponse, ITenannt } from "./types";
 
-const INITUAL_STATE = {
+const INITIAL_STATE = {
   user_id: "user_id",
   username: "username",
   name: null,
@@ -8,5 +11,15 @@ const INITUAL_STATE = {
 };
 
 export default modelFactory<Model>({
-  return 
+  name: "login",
+  endpoint: {
+    general: "auth",
+  },
+
+  state: {
+    user: INITIAL_STATE,
+    errors: {},
+    redirect: true,
+    logged: false,
+  }
 });
