@@ -13,4 +13,20 @@ export default function createModel<T = genericModel>(config: Config) {
   const cacheCreate = handleCache(config, "create");
   const cacheUpdate = handleCache(config, "update");
   const cacheDelete = handleCache(config, "delete");
+
+  // mock
+  const mock = prepareMock(config.mock);
+
+  return {
+		// -------------------------------------------------
+		// Properties
+		// -------------------------------------------------
+
+    name: config.name,
+    state: {
+      list: {
+        data: []
+      }
+    }
+  }
 }
