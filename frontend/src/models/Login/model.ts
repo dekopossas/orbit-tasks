@@ -21,5 +21,15 @@ export default modelFactory<Model>({
     errors: {},
     redirect: true,
     logged: false,
-  }
+  },
+
+  reducers: {
+    setUser: (state, value) => {
+      return { ...state, user: value };
+    },
+    setLogged: (state, value) => {
+      return { ...state, user: value };
+    },
+  },
+  
 });
